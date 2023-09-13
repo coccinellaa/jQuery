@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como usar jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div><h1>Lista de Nomes</h1></div>
+    <div>
+        <ul style="font-size: 35px">
+        <li class="a">Abacate</li>
+        <li class="m">Maracujá</li>
+        <li class="n">Noz</li>
+        <li class="g">Goiaba</li>
+        <li class="l">Laranja</li>
+    </ul>
+    </div>
+    <div>
+        <button id="btn">Clique aqui</button>
+    </div>
+    <script>
+        // $('h1').fadeOut("2000") // sair da tela por 2s
+       // $('h1').fadeOut("2000").fadeIn("2000") // sair da tela por 2s e reaparecer
+       // $('li').remove() // remove li
+       // $('h1').append(" de pessoas") // insere informação
+    // 1   $('#btn').on("click",botao) // ao clicar no botão sumirá a lista de nomes
+    //    function botao() {
+    //     $('h1').remove()
+    //    }
+    // $('#btn').on("click",botao) // ao clicar no botão a lista de nomes ficará azul
+    //     function botao() {
+    //      $('li').css({'color':'blue'})
+    //     }
+    
+     // ao clicar no botão a lista de nomes ficará azul
+     $('#btn').on("click", botao)
+        function botao() {
+         $('.a').css({'color':'green'})
+         $('#btn').on("click", botao)
+        function botao() {
+         $('.m').css({'color':'yellow'})
+         $('#btn').on("click", botao)
+        function botao() {
+         $('.n').css({'color':'brown'})
+         $('#btn').on("click", botao)
+        function botao() {
+         $('.g').css({'color':'pink'})
+         $('#btn').on("click", botao)
+        function botao() {
+         $('.l').css({'color':'orange'})
+         $('#btn').on("click", botao)
+        }
+    }
+}
+}
+        }
+    </script>
+</body>
+</html>
